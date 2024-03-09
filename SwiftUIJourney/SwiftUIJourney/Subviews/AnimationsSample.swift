@@ -16,7 +16,7 @@ struct AnimationsSample: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(colors: [._0F0C29,._302B63,._24243E], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [.red,.blue,.green], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             
             VStack {
@@ -94,7 +94,7 @@ struct AnimationsSample: View {
                         .font(.headline)
                         .fontWeight(.bold)
                         .padding()
-                        .background(._0F0C29)
+                        .background(.red)
                         .clipShape(Capsule())
                         .foregroundStyle(Color.white)
                 }
@@ -112,7 +112,7 @@ extension AnimationsSample{
             Circle()
                 .fill(
                     RadialGradient(
-                        gradient: Gradient(colors: [ Color._24243E, .white]),
+                        gradient: Gradient(colors: [ Color.blue, .white]),
                         center: .center,
                         startRadius: 0,
                         endRadius: 30
