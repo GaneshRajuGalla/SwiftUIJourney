@@ -12,9 +12,9 @@ struct FadeAnimationTransition: View {
     
     var body: some View {
         VStack{
-            Text("Migrate metascreen")
+            Text("Show New Screen")
                 .overlayFadeView(isPresented: $isPresented) {
-                    Text("Migreate Pre Screen")
+                    Text("Go to Pre - Screen")
                 }
                 .onTapGesture {
                     isPresented.toggle()
@@ -42,7 +42,7 @@ extension View {
                         .zIndex(1)
                 }
                 .frame(maxWidth: .infinity,maxHeight: .infinity)
-                .background(Color.blue)
+                .background(LinearGradient(colors: [Color.pink,Color.yellow], startPoint: .topLeading, endPoint: .bottomTrailing))
             }
         }
     }
