@@ -23,7 +23,7 @@ struct SheetSample: View {
         }
         
         .sheet(isPresented: $isPresented){
-            ContentView()
+            sheetView()
             
             // Keeping a SwiftUI Sheet Open
                 //.interactiveDismissDisabled()
@@ -56,7 +56,7 @@ struct SheetSample: View {
     }
 }
 
-struct ContentView: View {
+struct sheetView: View {
     // MARK: - Properties
     @Environment(\.dismiss) private var dismiss
     

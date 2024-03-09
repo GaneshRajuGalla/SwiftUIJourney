@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ViewAppearance: View {
     
     // MARK: - Properties
     @State private var isGray:Bool = false
@@ -36,7 +36,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ViewAppearance()
 }
 
 
